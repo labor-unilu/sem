@@ -1,0 +1,2147 @@
+<head>
+  <title>irm</title>
+  <meta charset="utf-8" />
+  <title>jQuery UI Slider - Snap to increments</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+   
+</head>
+
+<body>
+
+	<div class="container">
+
+		{{> pregame}}
+		
+		{{> hello}}
+		
+		{{> reziprozitaet}}
+			
+		{{> slider}}
+			
+		{{> demographie}}
+				
+		{{> spiel}}
+		
+		{{> postgame}}
+	
+	</div>
+
+</body>
+
+
+
+
+<!------------------Titel-------------------->		
+<template name="hello">
+ <center>	
+	<div class="row-fluid">
+		<div class="span12"></div>	
+	</div>
+</center>	
+</template>
+<!------------------Titel-------------------->
+
+
+
+
+<!------------------Pregame-------------------->	
+
+<template name="pregame">
+
+{{#if show}}
+
+
+	
+	<div class="row-fluid">
+		<div class="span12"><h1>Einleitung:</h1></div>		
+	</div>	
+
+<br/><h4> </h4> <br/>
+	
+	<div class="row-fluid">
+		<div class="span12">
+		
+Liebe Teilnehmende,
+<br/>
+<br/>
+In der Folge nehmen Sie an einem Experiment zum Thema Ressourcenverteilung teil. Das Experiment umfasst 5 Abschnitte und 
+beansprucht einen Zeitaufwand von ca. 10 Minuten. Sie werden dabei Geldbetraege erspielen. 
+Es handelt sich dabei um virtuelle Geldbetraege. Leider koennen wir Ihnen diese nicht in echte Geldbetraege umwandeln. 
+<br/>
+<br/>
+Was wir Ihnen jedoch anbieten koennen, sind die Resultate dieser Untersuchung, sowie in einem gewissen Rahmen technische 
+Unterstuetzung, wenn Sie einmal selber vorhaben, ein Onlineexperiment innerhalb einer Studienarbeit durchzufuehren. Dazu spaeter mehr.
+<br/>
+<br/>
+Grundsaetzlich werden alle Browser unterstuetzt. Sollten dennoch Probleme auftauchen, probieren Sie es bitte nochmals mit dem Browser 
+von Google Chrome. Zusaetzlich waeren wir Ihnen dankbar, wenn Sie das Problem melden koennten:  a.ressourcenverteilung@gmail.com.
+<br/>
+<br/>
+Vielen Dank fuer Ihre wertvolle Teilnahme.
+
+		
+		
+		
+		
+		</div>	
+	</div>
+
+	
+<br/><h4> </h4> <br/>	
+	
+
+<!--@@@@@@@@@@@weiter0@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span2"><button class="btn btn-large btn-primary" id="weiter0" type="button">Weiter</button></div>
+
+</div>
+
+<br/><h6> </h6> <br/>
+
+<!--@@@@@@@@@@@weiter0@@@@@@@@@-->
+	
+		
+	
+
+
+{{/if}}
+	
+</template>
+
+<!------------------Pregame-------------------->
+
+
+
+
+
+<!------------------Reziprozitaet: Item 1-11-------------------->
+
+
+<template name="reziprozitaet">
+{{#if show}}
+
+
+
+<div class="row-fluid">	
+<div class="span12">
+
+<h2>Anweisung:</h2>
+
+</div>
+</div>
+
+
+
+<div class="row-fluid">	
+<div class="span10">
+
+<h4>In welchem Massee treffen die folgenden Aussagen auf Sie persoenlich zu?</h4>
+<br/>
+Antworten Sie bitte anhand einer Skala.
+Der Wert 1 bedeutet: trifft ueberhaupt nicht zu,
+der Wert 7 bedeutet: trifft voll zu.
+
+</div>
+</div>
+
+<div class="row-fluid">	
+<div class="span10">
+______________________________________
+</div>
+</div>
+
+
+<br/><h4>   </h4> <br/>
+<br/><h4>   </h4> <br/>
+
+
+
+
+<div class="row-fluid">	
+<div class="span12">
+
+<table border="1">
+
+
+
+<tr>
+<th></th>
+<th style="width: 100px;">Trifft <br/>ueberhaupt <br/>nicht zu </th>
+<th style="width: 100px;"></th>
+<th style="width: 100px;"></th>
+<th style="width: 100px;"></th>
+<th style="width: 100px;"></th>
+<th style="width: 100px;"></th>
+<th style="width: 100px;">Trifft <br/>voll <br/>zu </th>
+</tr>
+
+<tr>
+<th></th>
+<th style="width: 100px;">1</th>
+<th style="width: 100px;">2</th>
+<th style="width: 100px;">3</th>
+<th style="width: 100px;">4</th>
+<th style="width: 100px;">5</th>
+<th style="width: 100px;">6</th>
+<th style="width: 100px;">7</th>
+</tr>
+
+
+
+<tr>
+<td><br/>Wenn mir jemand einen Gefallen tut,
+<br/>bin ich bereit, dies zu erwidern<br/>-</td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="1"value="1"></td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="2"value="2"></td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="3"value="3"></td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="4"value="4"></td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="5"value="5"></td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="6"value="6"></td>
+<td align="center"> <input type="radio" name="item1"class="item1" id="7"value="7"></td>
+</tr>
+
+
+<tr>
+<td><br/>Wenn mir schweres Unrecht zuteil wird, werde ich mich
+<br/>um jeden Preis bei der naechsten Gelegenheit dafuer raechen<br/>-</td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="8"value="8"></td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="9"value="9"></td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="10"value="10"></td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="11"value="11"></td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="12"value="12"></td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="13"value="13"></td>
+<td align="center"> <input type="radio" name="item2"class="item2" id="14"value="14"></td>
+</tr>
+
+
+<tr>
+<td><br/>Wenn mich jemand in eine schwierige Lage bringt,
+<br/>werde ich das Gleiche mit ihm machen<br/>-</td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="15"value="15"></td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="16"value="16"></td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="17"value="17"></td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="18"value="18"></td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="19"value="19"></td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="20"value="20"></td>
+<td align="center"> <input type="radio" name="item3"class="item3" id="21"value="21"></td>
+</tr>
+
+
+<tr>
+<td><br/>Ich strenge mich besonders an, um jemandem
+<br/>zu helfen, der mir frueher schon mal geholfen hat<br/>-</td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="22"value="22"></td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="23"value="23"></td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="24"value="24"></td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="25"value="25"></td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="26"value="26"></td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="27"value="27"></td>
+<td align="center"> <input type="radio" name="item4"class="item4" id="28"value="28"></td>
+</tr>
+
+
+<tr>
+<td><br/>Wenn mich jemand beleidigt, werde ich mich ihm
+<br/>gegenueber auch beleidigend verhalten<br/>-</td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="29"value="29"></td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="30"value="30"></td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="31"value="31"></td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="32"value="32"></td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="33"value="33"></td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="34"value="34"></td>
+<td align="center"> <input type="radio" name="item5"class="item5" id="35"value="35"></td>
+</tr>
+
+
+<tr>
+<td><br/>Ich bin bereit, Kosten auf mich zu nehmen, um jemandem
+<br/>zu helfen, der mir frueher einmal geholfen hat<br/>-</td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="36"value="36"></td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="37"value="37"></td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="38"value="38"></td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="39"value="39"></td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="40"value="40"></td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="41"value="41"></td>
+<td align="center"> <input type="radio" name="item6"class="item6" id="42"value="42"></td>
+</tr>
+
+
+<tr>
+<td><br/>Ich komme relativ leicht darueber hinweg,
+<br/>wenn jemand mich emotional verletzt<br/>-</td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="43"value="43"></td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="44"value="44"></td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="45"value="45"></td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="46"value="46"></td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="47"value="47"></td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="48"value="48"></td>
+<td align="center"> <input type="radio" name="item7"class="item7" id="49"value="49"></td>
+</tr>
+
+
+<tr>
+<td><br/>Wenn jemand mir unrecht getan hat,
+<br/>denke ich oft lange darueber nach<br/>-</td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="50"value="50"></td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="51"value="51"></td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="52"value="52"></td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="53"value="53"></td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="54"value="54"></td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="55"value="55"></td>
+<td align="center"> <input type="radio" name="item8"class="item8" id="56"value="56"></td>
+</tr>
+
+
+<tr>
+<td><br/>Ich bin tendenziell nachtragend<br/>-</td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="57"value="57"></td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="58"value="58"></td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="59"value="59"></td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="60"value="60"></td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="61"value="61"></td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="62"value="62"></td>
+<td align="center"> <input type="radio" name="item9"class="item9" id="63"value="63"></td>
+</tr>
+
+
+<tr>
+<td><br/>Wenn andere mir unrecht tun, versuche ich einfach
+<br/>zu vergeben und zu vergessen<br/>-</td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="64"value="64"></td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="65"value="65"></td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="66"value="66"></td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="67"value="67"></td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="68"value="68"></td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="69"value="69"></td>
+<td align="center"> <input type="radio" name="item10"class="item10" id="70"value="70"></td>
+</tr>
+
+
+<tr>
+<td><br/>Ich habe eine positive Einstellung zu mir selbst <br/>-</td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="71"value="71"></td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="72"value="72"></td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="73"value="73"></td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="74"value="74"></td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="75"value="75"></td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="76"value="76"></td>
+<td align="center"> <input type="radio" name="item11"class="item11" id="77"value="77"></td>
+</tr>
+
+</table>
+
+<br/><h4> </h4> <br/>
+
+</div>
+
+
+
+
+<!--@@@@@@@@@@@weiter1@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span2"><button class="btn btn-large btn-primary" id="weiter1" type="button">Weiter</button></div>
+
+</div>
+
+<br/><h6> </h6> <br/>
+
+<!--@@@@@@@@@@@weiter1@@@@@@@@@-->
+
+
+
+
+
+
+
+{{/if}}
+
+</template>
+<!------------------Reziprozitaet: Item 1-11-------------------->
+
+
+
+
+<!------------------Slider: Item 12-23-------------------->
+
+<template name="slider">
+
+{{#if show}}
+
+
+<!--------instruktionslider------------------->	
+
+
+<div class="row-fluid">	
+<div class="span12">
+
+<h2>Anweisung:</h2>
+
+</div>
+</div>
+
+
+
+<div class="row-fluid">	
+<div class="span10">
+In dieser Aufgabe sehen Sie Resultate eines anderen Experiments, in welchem jemand gebeten wurde, bestimmte Geldbetraege zwischen sich selbst und Ihnen aufzuteilen. 
+Konkreter, konnte sie/er jeweils zwschischen 9 verschiedenen Verteilungen auswaehlen. Diese/r Jemand ist eine Person, welche Sie nicht kennen und gegenseitig anonym bleiben wird. 
+Schauen wir uns ein Beispiel an: Da hat sich jemand entschieden eine Aufteilung zu waehlen, die ihm/ihr 50 Schweizer Franken bringt und ihnen 40. Neben dieser Wahl haette diese/r Jemand 
+acht andere Wahlmoeglichkeiten gehabt. Beispielsweise, haette sie/er 70 Schweizer Franken fuer sich beanspruchen koennen, was fuer Sie zur Folge gehabt haette, dass Sie nichts bekommen haetten. 
+<br/>
+<br/>
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Beispiel:</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt<br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">30 <br/> I <br/> I <br/> 80  <br/> <input type="radio" disabled></div>
+		<div class="span1">35 <br/> I <br/> I <br/> 70  <br/> <input type="radio" disabled></div>
+		<div class="span1">40 <br/> I <br/> I <br/> 60  <br/> <input type="radio" disabled></div>
+		<div class="span1">45 <br/> I <br/> I <br/> 50  <br/> <input type="radio" disabled></div>
+		<div class="span1">50 <br/> I <br/> I <br/> 40  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">55 <br/> I <br/> I <br/> 30  <br/> <input type="radio" disabled></div>
+		<div class="span1">60 <br/> I <br/> I <br/> 20  <br/> <input type="radio" disabled></div>
+		<div class="span1">65 <br/> I <br/> I <br/> 10  <br/> <input type="radio" disabled></div>
+		<div class="span1">70 <br/> I <br/> I <br/> 0  <br/> <input type="radio" disabled></div>
+	</div>
+<br/>
+<br/>
+<strong>Ihre Aufgabe ist es nun die einzelnen Entscheidungen zu bewerten.</strong> Wichtig zu erwaehnen ist, dass alle zwoelf Entscheidungen von einer anderen Person vorgenommen wurde. 
+Ihre Bewertung kann <strong> von -10, bis +10 reichen. </strong> -10 steht dabei fuer sehr <FONT COLOR="red">SEHR UNFAIR</FONT>, +10 fuer <FONT COLOR="green">SEHR FAIR</FONT>. 
+Die Bewertung nehmen Sie vor, indem Sie den Regler betaetigen. Wenn Sie die Bewertung vorgenommen haben, druecken Sie bitte auf den Bestaetigen-Button und gehen zur naechsten Entscheidung,
+die Sie zu bewerten haben. 
+<br/>
+<br/>
+Bevor Sie eine Bewertung vornehmen, Schauen Sie sich bitte alle zwoelf Entscheidungen an, die Sie zu bewerten haben.
+
+
+</div>
+</div>
+
+
+<br/>
+<br/>
+
+
+
+
+<div class="row-fluid">	
+<div class="span10">
+______________________________________
+</div>
+</div>
+
+
+<br/><h4>   </h4> <br/>
+<br/><h4>   </h4> <br/>
+
+
+	
+	
+
+
+<!--------instruktionslider------------------->	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------@@@@@@Item12@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 1</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">85 <br/> I <br/> I <br/> 15  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">87 <br/> I <br/> I <br/> 19  <br/> <input type="radio" disabled></div>
+		<div class="span1">89 <br/> I <br/> I <br/> 24  <br/> <input type="radio" disabled></div>
+		<div class="span1">91 <br/> I <br/> I <br/> 28  <br/> <input type="radio" disabled></div>
+		<div class="span1">93 <br/> I <br/> I <br/> 33  <br/> <input type="radio" disabled></div>
+		<div class="span1">94 <br/> I <br/> I <br/> 37  <br/> <input type="radio" disabled></div>
+		<div class="span1">96 <br/> I <br/> I <br/> 41  <br/> <input type="radio" disabled></div>
+		<div class="span1">98 <br/> I <br/> I <br/> 46  <br/> <input type="radio" disabled></div>
+		<div class="span1">100 <br/> I <br/> I <br/> 50  <br/> <input type="radio" disabled></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider1"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount1" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="79" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+
+
+
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+<br/><h4>   </h4> <br/>		
+
+<!------@@@@@@Item12@@@@@@----->
+
+
+<!------@@@@@@Item13@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 2</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">100 <br/> I <br/> I <br/> 50  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">98 <br/> I <br/> I <br/> 54  <br/> <input type="radio" disabled></div>
+		<div class="span1">96 <br/> I <br/> I <br/> 59  <br/> <input type="radio" disabled></div>
+		<div class="span1">94 <br/> I <br/> I <br/> 63  <br/> <input type="radio" disabled></div>
+		<div class="span1">93 <br/> I <br/> I <br/> 68  <br/> <input type="radio" disabled></div>
+		<div class="span1">91 <br/> I <br/> I <br/> 72  <br/> <input type="radio" disabled></div>
+		<div class="span1">89 <br/> I <br/> I <br/> 76  <br/> <input type="radio" disabled></div>
+		<div class="span1">87 <br/> I <br/> I <br/> 81  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 85  <br/> <input type="radio" disabled></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider2"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount2" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="81" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+
+<br/><h4>   </h4> <br/>	
+
+<!------@@@@@@Item13@@@@@@----->
+
+
+<!------@@@@@@Item14@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 3</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">50 <br/> I <br/> I <br/> 100  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">54 <br/> I <br/> I <br/> 98  <br/> <input type="radio" disabled></div>
+		<div class="span1">59 <br/> I <br/> I <br/> 96  <br/> <input type="radio" disabled></div>
+		<div class="span1">63 <br/> I <br/> I <br/> 94  <br/> <input type="radio" disabled></div>
+		<div class="span1">68 <br/> I <br/> I <br/> 93  <br/> <input type="radio" disabled></div>
+		<div class="span1">72 <br/> I <br/> I <br/> 91  <br/> <input type="radio" disabled></div>
+		<div class="span1">76 <br/> I <br/> I <br/> 89  <br/> <input type="radio" disabled></div>
+		<div class="span1">81 <br/> I <br/> I <br/> 87  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 85  <br/> <input type="radio" disabled></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider3"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount3" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="83" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+
+<br/><h4>   </h4> <br/>	
+
+<!------@@@@@@Item14@@@@@@----->
+
+<!------@@@@@@Item15@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 4</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">100 <br/> I <br/> I <br/> 50  <br/> <input type="radio" disabled></div> 
+		<div class="span1">98 <br/> I <br/> I <br/> 54  <br/> <input type="radio" disabled></div>
+		<div class="span1">96 <br/> I <br/> I <br/> 59  <br/> <input type="radio" disabled></div>
+		<div class="span1">94 <br/> I <br/> I <br/> 63  <br/> <input type="radio" disabled></div>
+		<div class="span1">93 <br/> I <br/> I <br/> 68  <br/> <input type="radio" disabled></div>
+		<div class="span1">91 <br/> I <br/> I <br/> 72  <br/> <input type="radio" disabled></div>
+		<div class="span1">89 <br/> I <br/> I <br/> 76  <br/> <input type="radio" disabled></div>
+		<div class="span1">87 <br/> I <br/> I <br/> 81  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 85  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider4"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount4" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="85" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+
+<br/><h4>   </h4> <br/>	
+
+<!------@@@@@@Item15@@@@@@----->
+
+
+
+<!------@@@@@@Item16@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 5</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">50 <br/> I <br/> I <br/> 100  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">54 <br/> I <br/> I <br/> 89  <br/> <input type="radio" disabled></div> 
+		<div class="span1">59 <br/> I <br/> I <br/> 79  <br/> <input type="radio" disabled></div> 
+		<div class="span1">63 <br/> I <br/> I <br/> 68  <br/> <input type="radio" disabled></div> 
+		<div class="span1">68 <br/> I <br/> I <br/> 58  <br/> <input type="radio" disabled></div> 
+		<div class="span1">72 <br/> I <br/> I <br/> 47  <br/> <input type="radio" disabled></div> 
+		<div class="span1">76 <br/> I <br/> I <br/> 36  <br/> <input type="radio" disabled></div> 
+		<div class="span1">81 <br/> I <br/> I <br/> 26  <br/> <input type="radio" disabled></div> 
+		<div class="span1">85 <br/> I <br/> I <br/> 15  <br/> <input type="radio" disabled></div> 
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider5"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount5" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="87" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>		
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+
+<br/><h4>   </h4> <br/>	
+
+<!------@@@@@@Item16@@@@@@----->
+
+
+
+<!------@@@@@@Item17@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 6</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">50 <br/> I <br/> I <br/> 100  <br/> <input type="radio" disabled></div> 
+		<div class="span1">54 <br/> I <br/> I <br/> 89  <br/> <input type="radio" disabled></div> 
+		<div class="span1">59 <br/> I <br/> I <br/> 79  <br/> <input type="radio" disabled></div> 
+		<div class="span1">63 <br/> I <br/> I <br/> 68  <br/> <input type="radio" disabled></div> 
+		<div class="span1">68 <br/> I <br/> I <br/> 58  <br/> <input type="radio" disabled></div> 
+		<div class="span1">72 <br/> I <br/> I <br/> 47  <br/> <input type="radio" disabled></div> 
+		<div class="span1">76 <br/> I <br/> I <br/> 36  <br/> <input type="radio" disabled></div> 
+		<div class="span1">81 <br/> I <br/> I <br/> 26  <br/> <input type="radio" disabled></div> 
+		<div class="span1">85 <br/> I <br/> I <br/> 15  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider6"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount6" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="89" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+
+<br/><h4>   </h4> <br/>	
+
+<!------@@@@@@Item17@@@@@@----->
+
+
+<!------@@@@@@Item18@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 7</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">85 <br/> I <br/> I <br/> 15  <br/> <input type="radio" disabled></div> 
+		<div class="span1">87 <br/> I <br/> I <br/> 19  <br/> <input type="radio" disabled></div>
+		<div class="span1">89 <br/> I <br/> I <br/> 24  <br/> <input type="radio" disabled></div>
+		<div class="span1">91 <br/> I <br/> I <br/> 28  <br/> <input type="radio" disabled></div>
+		<div class="span1">93 <br/> I <br/> I <br/> 33  <br/> <input type="radio" disabled></div>
+		<div class="span1">94 <br/> I <br/> I <br/> 37  <br/> <input type="radio" disabled></div>
+		<div class="span1">96 <br/> I <br/> I <br/> 41  <br/> <input type="radio" disabled></div>
+		<div class="span1">98 <br/> I <br/> I <br/> 46  <br/> <input type="radio" disabled></div>
+		<div class="span1">100 <br/> I <br/> I <br/> 50  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider7"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount7" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="91" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+<br/><h4>   </h4> <br/>		
+
+<!------@@@@@@Item18@@@@@@----->
+
+
+<!------@@@@@@Item19@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 8</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">85 <br/> I <br/> I <br/> 85  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 76  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 68  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 59  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 50  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 41  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 33  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 24  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 15  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider8"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount8" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="93" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+<br/><h4>   </h4> <br/>		
+
+<!------@@@@@@Item19@@@@@@----->
+
+
+<!------@@@@@@Item20@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 9</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">50 <br/> I <br/> I <br/> 100  <br/> <input type="radio" disabled></div>
+		<div class="span1">54 <br/> I <br/> I <br/> 98  <br/> <input type="radio" disabled></div>
+		<div class="span1">59 <br/> I <br/> I <br/> 96  <br/> <input type="radio" disabled></div>
+		<div class="span1">63 <br/> I <br/> I <br/> 94  <br/> <input type="radio" disabled></div>
+		<div class="span1">68 <br/> I <br/> I <br/> 93  <br/> <input type="radio" disabled></div>
+		<div class="span1">72 <br/> I <br/> I <br/> 91  <br/> <input type="radio" disabled></div>
+		<div class="span1">76 <br/> I <br/> I <br/> 89  <br/> <input type="radio" disabled></div>
+		<div class="span1">81 <br/> I <br/> I <br/> 87  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 85  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider9"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount9" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="95" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+
+<br/><h4>   </h4> <br/>	
+
+<!------@@@@@@Item20@@@@@@----->
+
+
+<!------@@@@@@Item21@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 10</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">85 <br/> I <br/> I <br/> 85  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 76  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 68  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 59  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 50  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 41  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 33  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 24  <br/> <input type="radio" disabled></div>
+		<div class="span1">85 <br/> I <br/> I <br/> 15  <br/> <input type="radio" disabled></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider10"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount10" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="97" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+<br/><h4>   </h4> <br/>		
+
+<!------@@@@@@Item21@@@@@@----->
+
+
+
+<!------@@@@@@Item22@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 11</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">100 <br/> I <br/> I <br/> 50  <br/> <input type="radio" disabled></div>
+		<div class="span1">94 <br/> I <br/> I <br/> 56  <br/> <input type="radio" disabled></div>
+		<div class="span1">88 <br/> I <br/> I <br/> 63  <br/> <input type="radio" disabled></div>
+		<div class="span1">81 <br/> I <br/> I <br/> 69  <br/> <input type="radio" disabled></div>
+		<div class="span1">75 <br/> I <br/> I <br/> 75  <br/> <input type="radio" disabled></div>
+		<div class="span1">69 <br/> I <br/> I <br/> 81  <br/> <input type="radio" disabled></div>
+		<div class="span1">63 <br/> I <br/> I <br/> 88  <br/> <input type="radio" disabled></div>
+		<div class="span1">56 <br/> I <br/> I <br/> 94  <br/> <input type="radio" disabled></div>
+		<div class="span1">50 <br/> I <br/> I <br/> 100  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider11"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount11" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="99" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+<br/><h4>   </h4> <br/>		
+
+<!------@@@@@@Item22@@@@@@----->
+
+
+<!------@@@@@@Item23@@@@@@----->
+
+<div class="row-fluid">
+		<div class="span1"><FONT COLOR="blue">Item 12</FONT><br/>  <br/>  <br/></div>
+	    <div class="span2">Jemand erhaelt <br/>  <br/>  <br/> Sie erhalten</div>	
+		<div class="span1">100 <br/> I <br/> I <br/> 50  <br/> <FONT COLOR="blue"><h4>  X </h4> </FONT></div>
+		<div class="span1">94 <br/> I <br/> I <br/> 56  <br/> <input type="radio" disabled></div>
+		<div class="span1">88 <br/> I <br/> I <br/> 63  <br/> <input type="radio" disabled></div>
+		<div class="span1">81 <br/> I <br/> I <br/> 69  <br/> <input type="radio" disabled></div>
+		<div class="span1">75 <br/> I <br/> I <br/> 75  <br/> <input type="radio" disabled></div>
+		<div class="span1">69 <br/> I <br/> I <br/> 81  <br/> <input type="radio" disabled></div>
+		<div class="span1">63 <br/> I <br/> I <br/> 88  <br/> <input type="radio" disabled></div>
+		<div class="span1">56 <br/> I <br/> I <br/> 94  <br/> <input type="radio" disabled></div>
+		<div class="span1">50 <br/> I <br/> I <br/> 100  <br/> <input type="radio" disabled></div>
+	</div>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9"><br/><br/><h4> Ihre Bewertung:</4></div>
+</div>
+
+<br/>
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span1"><h5>-10</h5></div>
+<div class="span7"></div>
+<div class="span1"><h5><FONT COLOR="white">---------</FONT>+10</h5></div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+
+
+<div class="span9"> <div id="slider12"></div>
+
+
+</div>
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span2"><h5><FONT COLOR="red">SEHR UNFAIR</FONT></h5></div>
+<div class="span5"></div>
+<div class="span2"><h5><FONT COLOR="white">-------------------</FONT><FONT COLOR="green">SEHR FAIR</FONT></h5></div>
+</div>
+
+
+
+
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">------</FONT>
+<input type="text" id="amount12" style="border: 0; color: blue; font-weight: bold; font-size:30px; width:50px;height:35px;" />
+</center>
+</div>
+</div>	
+
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span9">
+<center>
+<FONT COLOR="white">--</FONT>
+<button type="button" id="101" class="btn">Bestaetigen</button>
+</center>
+</div>
+</div>	
+
+
+	
+<div class="row-fluid">	
+<div class="span12"><br/><br/><br/>______________________________________________________________________________________________________________________________________________________</div>
+</div>	
+
+<br/><h4>   </h4> <br/>		
+
+<!------@@@@@@Item23@@@@@@----->
+
+
+
+<!--@@@@@@@@@@@weiter2@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span2"><button class="btn btn-large btn-primary" id="weiter2" type="button">Weiter</button></div>
+
+</div>
+
+<br/><h6>   </h6> <br/>
+
+<!--@@@@@@@@@@@weiter2@@@@@@@@@-->
+
+
+
+
+
+
+
+
+
+
+
+
+{{/if}}
+</template>
+
+
+
+
+
+<!------------------Demographie: Item 24-30-------------------->
+
+
+
+
+<template name="demographie">
+{{#if show}}
+
+<div class="row-fluid">
+<div class="span12">
+<h2>Angaben zur Person:</h2>
+</div>
+</div>
+
+<br/><h4>   </h4> <br/>
+
+
+
+<!--@@@@@@@@@@@Geschlecht@@@@@@@@@-->
+
+<div class="row-fluid">
+<div class="span12">
+<h5>Bitte geben Sie an, welches Geschlecht Sie haben.</h5>
+</div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span12">
+
+<input type="radio" name="item24" class="item13" id="102" value="102">
+maennlich
+
+</div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span12">
+
+<input type="radio" name="item24" class="item13" id="103" value="103">
+weiblich
+
+</div>
+</div>
+
+
+<br/><h6>   </h6> <br/>
+
+
+<!--@@@@@@@@@@@Geschlecht@@@@@@@@@-->
+
+
+
+
+<!--@@@@@@@@@@@Alter@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span12"><h5> In welchem Jahr sind Sie geboren?:</h5></div>
+
+</div>
+
+
+<div class="row-fluid">
+
+<div class="span3"> <input id="104" type="text" class="input-small"/></div>
+
+<div class="span2"><button id="105" class="small">Bestaetigen</button></div>
+
+</div>
+
+
+<br/><h6>   </h6> <br/>
+
+
+<!--@@@@@@@@@@@Alter@@@@@@@@@-->
+
+
+
+
+
+<!--@@@@@@@@@@@Studienrichtung@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span12"><h5> Bitte geben Sie an, in welchem Studiengang Sie studieren (Major). </h5></div>
+
+</div>
+
+
+<div class="row-fluid">
+
+<div class="span3"> <input id="106" type="text" class="small"/></div>
+
+<div class="span2"><button id="107" class="small">Bestaetigen</button></div>
+
+</div>
+
+
+
+<br/><h6>   </h6> <br/>
+
+
+
+<!--@@@@@@@@@@@Studienrichtung@@@@@@@@@-->
+
+
+
+
+<!--@@@@@@@@@@@Studienstufe@@@@@@@@@-->
+
+<div class="row-fluid">
+<div class="span12">
+<h5>Bitte geben Sie an, auf welcher Studienstufe Sie studieren.</h5>
+</div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span12">
+
+<input type="radio" name="item27" class="item27" id="108" value="108">
+Bachelor
+
+</div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span12">
+
+<input type="radio" name="item27" class="item27" id="109" value="109">
+Master
+
+</div>
+</div>
+
+
+<br/><h6>   </h6> <br/>
+
+
+<!--@@@@@@@@@@@Studienstufe@@@@@@@@@-->
+
+
+<!--@@@@@@@@@@@Experimenterfahrung@@@@@@@@@-->
+
+<div class="row-fluid">
+<div class="span12">
+<h5>Haben Sie schon einmal an Experimenten mit einer aehnlichen Aufgabenstellung teilgenommen?:</h5>
+</div>
+</div>
+
+
+
+<div class="row-fluid">
+<div class="span12">
+
+<input type="radio" name="item28" class="item28" id="110" value="110">
+Ja
+
+</div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span12">
+
+<input type="radio" name="item28" class="item28" id="111" value="111">
+Nein
+
+</div>
+</div>
+
+
+<br/><h6>   </h6> <br/>
+
+
+<!--@@@@@@@@@@@Experimenterfahrung@@@@@@@@@-->
+
+
+<!--@@@@@@@@@@@Haushaltsgrösse@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span12"><h5> Wie viele Personen, Sie selbst nicht mitgerechnet, leben in Ihrem Haushalt?</h5></div>
+
+</div>
+
+
+<div class="row-fluid">
+
+<div class="span3"> <input id="112" type="text" class="input-small"/></div>
+
+<div class="span2"><button id="113" class="small">Bestaetigen</button></div>
+
+</div>
+
+
+
+<br/><h6>   </h6> <br/>
+
+
+
+<!--@@@@@@@@@@@Haushaltsgrösse@@@@@@@@@-->
+
+
+<!--@@@@@@@@@@@Nettoeinkommen@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span12"><h5> Bitte geben Sie an, wie hoch Ihr Nettoeinkommen pro Monat ist</h5></div>
+
+</div>
+
+
+<div class="row-fluid">
+
+<div class="span3"> <input id="114" type="text" class="input-small"/></div>
+
+<div class="span2"><button id="115" class="small">Bestaetigen</button></div>
+
+</div>
+
+
+
+<br/><h4>   </h4> <br/>
+
+
+
+<!--@@@@@@@@@@@Nettoeinkommen@@@@@@@@@-->
+
+
+<!--@@@@@@@@@@@weiter3@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span2"><button class="btn btn-large btn-primary" id="weiter3" type="button">Weiter</button></div>
+
+</div>
+
+<br/><h6>   </h6> <br/>
+
+<!--@@@@@@@@@@@weiter3@@@@@@@@@-->
+
+
+{{/if}}
+</template>
+
+
+
+<!------------------Demographie: Item 23-30-------------------->
+
+
+
+<!------------------Spiel: Item 31-32-------------------->
+
+
+
+
+<template name="spiel">
+{{#if show}}
+
+
+		{{#if zweiodersieben}}
+
+<div class="row-fluid">	
+<div class="span12">
+
+<h2>Anweisung:</h2>
+
+</div>
+</div>
+
+<div class="row-fluid">	
+<div class="span10">
+
+<h5>Unten sehen Sie einen Geldbetrag in roter Farbe. Der Betrag stammt von einem Mitspieler aus einem anderen experimentellen
+Versuch, der Ihnen per Zufallsmechanismus zugelost wurde. Ihr Mitspieler bekam 10 Schweizer Franken, die er zwischen sich und 
+einem anderen Mitspieler aufteilen konnte. Der Betrag unten ist der, welcher der Mitspieler Ihnen zukommen liess. </h5>
+</div>
+</div>
+<div class="row-fluid">	
+<div class="span10">
+______________________________________
+</div>
+</div>
+	
+<div class="row-fluid">
+<div class="span1"></div>
+<div class="span5"> <h1><FONT COLOR="red">2</FONT></h1></div>
+</div>
+
+<div class="row-fluid">
+<div class="span12">______________________________________</div>
+</div>
+
+
+<div class="row-fluid">	
+<div class="span10">
+<h5>Sie erhalten nun ebenfalls einen Betrag von 10 Schweizer Franken. Diesen Betrag sollen Sie in zwei Teile aufteilen. Den ersten Teil des Betrags duerfen Sie fuer sich behalten. Der zweite Teil geht an den/die  Studierende(n) der Universitaet Luzern, welche(r) Ihnen obigen Beitrag zukommen liess. Sie werden aber nicht erfahren, wer diese zweite Person ist. Ebenso wird diese zweite Person, die den Betrag erhaelt, nicht wissen, von wem sie den Betrag bekam. Sie koennen den Betrag aufteilen wie Sie wollen. Welche Aufteilung Sie vornehmen, bleibt ganz und gar Ihnen selbst ueberlassen. Ueberlegen Sie sich bitte Ihre Entscheidung alleine und in Ruhe. Besprechen Sie sich nicht mit Personen, die gegebenenfalles neben Ihnen sitzen!
+</h5>
+</div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span12">________________________________________________________________________________________________________________________________________________</div>
+</div>
+
+
+<br/><h4> </h4> <br/>	
+<br/><h4> </h4> <br/>
+
+<div class="row-fluid">
+<div class="span6"> <h6>Ueberlegen Sie sich bitte Ihre Entscheidung in Ruhe. Treffen Sie Ihre Entscheidung und tragen Sie dazu
+den Betrag, den Sie fuer sich selbst behalten wollen in den folgenden Kasten ein.</h6></div>
+</div>
+
+<div class="row-fluid">
+<div class="span9">
+<form class="form-search">
+  <input type="text" id="116" class="input-small search-query">
+  <button type="button" id="117" class="btn">Bestaetigen</button>
+</form>
+</div>
+</div>	
+
+<div class="row-fluid">
+<div class="span6"> <h6>Bitte tragen Sie in den nachstehenden Kasten den Betrag ein, den Sie an den Mitspieler
+abgeben wollen. Achten Sie bitte darauf, dass die Summe beider Angaben den Betrag von 10 Schweizer 
+Franken nicht ueberschreiten darf.</h6></div>
+</div>
+
+<div class="row-fluid">
+<div class="span9">
+<form class="form-search">
+  <input type="text" id="118" class="input-small search-query">
+  <button type="button" id="119" class="btn">Bestaetigen</button>
+</form>
+</div>
+</div>
+
+
+
+
+	
+		{{else}}	
+
+<div class="row-fluid">	
+<div class="span12">
+
+<h2>Anweisung:</h2>
+
+</div>
+</div>
+
+<div class="row-fluid">	
+<div class="span10">
+
+<h5>Unten sehen Sie einen Geldbetrag in roter Farbe. Der Betrag stammt von einem Mitspieler aus einem anderen experimentellen
+Versuch, der Ihnen per Zufallsmechanismus zugelost wurde. Ihr Mitspieler bekam 10 Schweizer Franken, die er zwischen sich und 
+einem anderen Mitspieler aufteilen konnte. Der Betrag unten ist der, welcher der Mitspieler Ihnen zukommen liess.</h5>
+</div>
+</div>
+<div class="row-fluid">	
+<div class="span10">
+______________________________________
+</div>
+</div>
+	
+<div class="row-fluid">
+<div class="span1"></div>
+<div class="span5"> <h1><FONT COLOR="red">7</FONT></h1></div>
+</div>
+
+<div class="row-fluid">
+<div class="span12">______________________________________</div>
+</div>
+
+
+<div class="row-fluid">	
+<div class="span10">
+<h5>Sie erhalten nun ebenfalls einen Betrag von 10 Schweizer Franken. Diesen Betrag sollen Sie in zwei Teile aufteilen. Den ersten Teil des Betrags duerfen Sie fuer sich behalten. Der zweite Teil geht an den/die  Studierende(n) der Universitaet Luzern, welche(r) Ihnen obigen Beitrag zukommen liess. Sie werden aber nicht erfahren, wer diese zweite Person ist. Ebenso wird diese zweite Person, die den Betrag erhaelt, nicht wissen, von wem sie den Betrag bekam. Sie koennen den Betrag aufteilen wie Sie wollen. Welche Aufteilung Sie vornehmen, bleibt ganz und gar Ihnen selbst ueberlassen. Ueberlegen Sie sich bitte Ihre Entscheidung alleine und in Ruhe. Besprechen Sie sich nicht mit Personen, die gegebenenfalles neben Ihnen sitzen!
+</h5>
+</div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span12">________________________________________________________________________________________________________________________________________________</div>
+</div>
+
+
+<br/><h4> </h4> <br/>	
+<br/><h4> </h4> <br/>
+
+<div class="row-fluid">
+<div class="span6"> <h6>Ueberlegen Sie sich bitte Ihre Entscheidung in Ruhe. Treffen Sie Ihre Entscheidung und tragen Sie dazu
+den Betrag, den Sie fuer sich selbst behalten wollen in den folgenden Kasten ein.</h6></div>
+</div>
+
+<div class="row-fluid">
+<div class="span9">
+<form class="form-search">
+  <input type="text" id="120" class="input-small search-query">
+  <button type="button" id="121" class="btn">Bestaetigen</button>
+</form>
+</div>
+</div>	
+
+<div class="row-fluid">
+<div class="span6"> <h6>Bitte tragen Sie in den nachstehenden Kasten den Betrag ein, den Sie an den Mitspieler
+abgeben wollen. Achten Sie bitte darauf, dass die Summe beider Angaben den Betrag von 10 Schweizer 
+Franken nicht ueberschreiten darf.</h6></div>
+</div>
+
+<div class="row-fluid">
+<div class="span9">
+<form class="form-search">
+  <input type="text" id="122" class="input-small search-query">
+  <button type="button" id="123" class="btn">Bestaetigen</button>
+</form>
+</div>
+</div>
+		
+		{{/if}}
+
+
+
+
+		
+<br/><h4> </h4> <br/>	
+	
+
+<!--@@@@@@@@@@@weiter4@@@@@@@@@-->
+
+
+<div class="row-fluid">
+
+<div class="span2"><button class="btn btn-large btn-primary" id="weiter4" type="button">Weiter</button></div>
+
+</div>
+
+<br/><h6> </h6> <br/>
+
+<!--@@@@@@@@@@@weiter4@@@@@@@@@-->
+
+
+		
+{{/if}}
+</template>
+
+
+<!------------------Spiel: Item 31-32-------------------->
+
+
+
+<!------------------Postgame-------------------->	
+
+<template name="postgame">
+
+{{#if show}}
+
+
+	
+	<div class="row-fluid">
+		<div class="span12"><h2>Vielen Dank fuer Ihre Teilnahme!</h2></div>		
+	</div>	
+
+<br/><h4> </h4> <br/>
+	
+<div class="row-fluid">
+<div class="span6"> <h5>Wenn Sie ueber die Resultate dieser Untersuchung informiert werden moechten, 
+tragen Sie unten bitte Ihre E-Mail-Adresse ein:</div>
+</div>
+
+<div class="row-fluid">
+<div class="span9">
+<form class="form-search">
+  <input type="text" id="interessea" class="input-medium search-query">
+  <button type="button" id="interesseb" class="btn">Bestaetigen</button>
+</form>
+</div>
+</div>	
+
+<div class="row-fluid">
+<div class="span6"> <h5>Wenn Sie mehr ueber die technische Realisierung von Onlineexperimenten erfahren moechten, 
+tragen Sie unten bitte Ihre E-Mail-Adresse ein:</div>
+</div>
+
+<div class="row-fluid">
+<div class="span9">
+<form class="form-search">
+  <input type="text" id="interessec" class="input-medium search-query">
+  <button type="button" id="interessed" class="btn">Bestaetigen</button>
+</form>
+</div>
+</div>
+
+	
+<br/><h4> </h4> <br/>	
+		
+		
+	
+
+
+{{/if}}
+	
+</template>
+
+<!------------------Postgame-------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
